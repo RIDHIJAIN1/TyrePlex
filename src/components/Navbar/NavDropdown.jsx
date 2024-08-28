@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import { IoIosArrowDropdown } from "react-icons/io";
 
-const Dropdown = ({ title, options }) => {
+const NavDropdown = ({ title, options }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -21,15 +20,18 @@ const Dropdown = ({ title, options }) => {
   }, []);
 
   return (
-    <div className="relative inline-block text-left" ref={dropdownRef}>
-      <button
+    <div
+      className="relative inline-block text-left z-10 lg:z-0"
+      ref={dropdownRef}
+    >
+      <a
         onClick={toggleDropdown}
-        className="bg-red-600 z-10 text-white flex px-4 py-2 items-center focus:outline-none focus:ring-2 focus:ring-red-500 text-center"
+        className="block lg:inline-block py-2 px-1 hover:text-red-500 transition duration-300"
       >
-        {title} <IoIosArrowDropdown className="ml-2" />
-      </button>
+        {title}
+      </a>
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 bg-black text-white rounded-lg shadow-lg">
+        <div className="absolute right-0 mt-2 w-48 lg:w-56 bg-black text-white rounded-lg shadow-lg z-100">
           <ul className="py-1">
             {options.map((option, index) => (
               <li key={index}>
@@ -45,4 +47,4 @@ const Dropdown = ({ title, options }) => {
   );
 };
 
-export default Dropdown;
+export default NavDropdown;

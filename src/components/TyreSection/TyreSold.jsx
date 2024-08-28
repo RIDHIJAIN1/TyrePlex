@@ -1,9 +1,9 @@
 import React from 'react'
-import half from '../../images/half.png'
-import Dropdown from './Dropdown';
+import half from '../../../images/half.png'
+import Dropdown from '../Dropdown';
 import { FaSearch } from 'react-icons/fa';
-import Button from './Button';
-import Mrf from '../../images/mrf.png';
+import Button from '../Button';
+import Mrf from '../../../images/mrf.png';
 import TyreCard from './TyreCard';
 
 

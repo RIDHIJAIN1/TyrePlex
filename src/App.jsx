@@ -1,26 +1,25 @@
 import { useState, useEffect } from 'react';
 import './index.css';
-import Header from './components/Header';
-import Banner from './components/Banner';
-import Deals from './components/Deals';
-import Services from './components/Services';
+import Header from './components/Navbar/Header';
+import Banner from './components/Banner/Banner';
+import Deals from './components/Deals/Deals';
+import Services from './components/Service/Services';
 import Reviews from './components/Reviews/Reviews';
-import Questionaire from './components/Questionaire';
-import Footer from './components/Footer';
-import TyreSold from './components/TyreSold';
-import Dropdown from './components/Dropdown';
-import PaymentModes from './components/PaymentModes';
+import Questionaire from './components/Questionaire/Questionaire';
+import Footer from './components/Footer/Footer';
+import TyreSold from './components/TyreSection/TyreSold';
+import PaymentModes from './components/Payment/PaymentModes';
 import Loader from './components/Loader/Loader';
 
 function App() {
   const [loading, setLoading] = useState(true);
 
-  // Simulate a data fetching or loading process
+
   useEffect(() => {
-    // Simulate a loading time
+   
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // Change this duration based on your actual loading time
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
