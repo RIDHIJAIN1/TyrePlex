@@ -1,9 +1,11 @@
 import React from 'react';
 // import '../output.css';
 import BannerImage from '../../images/tire.png';
+import Shop from '../../images/shop.jpg';
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosTime } from "react-icons/io";
 import Button from './Button';
+
 
 const Banner = () => {
   return (
@@ -28,7 +30,7 @@ const Banner = () => {
               </span>
             </div>
           </div>
-          <div className='mt-8'>
+          <div className='mt-8  '>
             <Button>Get Directions</Button>
           </div>
         </div>

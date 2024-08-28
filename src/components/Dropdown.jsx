@@ -33,7 +33,7 @@ const Dropdown = ({ title, options }) => {
           <ul className="py-1">
             {options.map((option, index) => (
               <li key={index}>
-                <a href="#" className="block px-4 py-2 hover:bg-red-600">{option}</a>
+                <a href="#" className="block px-4 py-2 hover:bg-red-600 z-50">{option}</a>
               </li>
             ))}
           </ul>
