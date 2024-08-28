@@ -15,28 +15,28 @@ const Footer = () => {
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <img src={logo} alt="Logo" className=" mb-4" />
 
-            <div className="flex  space-x-5 mb-6">
+            <div className="flex  space-x-5  sm:space-x-2 mb-6">
               <a
                 href="#"
-                className="text-xl text-gray-400 hover:text-white transition border-red-500 border-2 p-2"
+                className="text-xl sm:text-sm text-gray-400 hover:text-white transition border-red-500 border-2 p-2"
               >
                 <FaFacebookF />
               </a>
               <a
                 href="#"
-                className="text-xl text-gray-400 hover:text-white transition  border-red-500 border-2 p-2"
+                className="text-xl sm:text-sm text-gray-400 hover:text-white transition  border-red-500 border-2 p-2"
               >
                 <FaTwitter />
               </a>
               <a
                 href="#"
-                className="text-xl text-gray-400 hover:text-white transition  border-red-500 border-2 p-2"
+                className="text-xl sm:text-sm text-gray-400 hover:text-white transition  border-red-500 border-2 p-2"
               >
                 <FaInstagram />
               </a>
               <a
                 href="#"
-                className="text-xl text-gray-400 hover:text-white transition  border-red-500 border-2 p-2"
+                className="text-xl sm:text-sm text-gray-400 hover:text-white transition  border-red-500 border-2 p-2"
               >
                 <FaLinkedinIn />
               </a>

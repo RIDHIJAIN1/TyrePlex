@@ -9,7 +9,7 @@ import { Pagination } from "swiper/modules";
 const Reviews = () => {
   return (
     <div>
-      <h1 className="text-3xl lg:text-4xl font-bold text-center mt-16">
+      <h1 className="text-3xl lg:text-4xl font-bold text-center mt-12">
         REVIEWS
       </h1>
       <div className="flex flex-col lg:flex-row">

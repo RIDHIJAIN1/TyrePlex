@@ -39,22 +39,22 @@ const Banner = () => {
             SERVICES
           </h1>
           <div className="space-y-4">
-            <div className="flex space-x-2">
-              <div className="bg-green-500 text-black text-sm flex w-fit h-fit px-2 py-1 rounded-md">
-                4.9{" "}
-              </div>
-              <div className="font-bold text-yellow-300">★★★★★</div>
-              <a href="/" className="font-bold text-black-300 cursor-pointer">
-                2278 Reviews{" "}
-              </a>
-              <div
-                className="border-red-500 border-2 px-2 cursor-pointer"
-                onClick={openModal}
-              >
-                Rate
-              </div>
-              <Model isOpen={isModalOpen} onClose={closeModal} />
-            </div>
+          <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+  <div className="bg-green-500 text-black text-sm flex w-fit h-fit px-2 py-1 rounded-md">
+    4.9{" "}
+  </div>
+  <div className="font-bold text-yellow-300">★★★★★</div>
+  <a href="/" className="font-bold text-black-300 cursor-pointer ">
+    2278 Reviews{" "}
+  </a>
+  <div
+    className="border-red-500 border-2 px-2 cursor-pointer w-fit"
+    onClick={openModal}
+  >
+    Rate
+  </div>
+  <Model isOpen={isModalOpen} onClose={closeModal} />
+</div>
             <div className="flex items-center mb-2">
               <FaLocationDot className="text-red-600 mr-3 text-3xl" />
               <span className="text-sm lg:text-base">
@@ -63,7 +63,7 @@ const Banner = () => {
               </span>
             </div>
             <div className="flex items-center mb-4">
-              <IoIosTime className="text-red-600 mr-3 text-2xl" />
+              <IoIosTime className="text-red-600 mr-3 text-2xl sm:text-2xl" />
               <span className="text-sm lg:text-base">
                 Open - Monday to Sunday - 10:00AM to 8:00PM
               </span>

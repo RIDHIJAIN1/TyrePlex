@@ -18,7 +18,7 @@ const TyreSold = () => {
     <div>
 
 
-       <h1 className='text-3xl lg:text-4xl font-bold text-center mt-16'>TYRES SOLD</h1>
+       <h1 className='text-3xl lg:text-4xl font-bold text-center mt-12'>TYRES SOLD</h1>
        <div className="flex flex-wrap justify-center gap-4 p-4 my-10">
 <Dropdown title="Filter By" options={options1} />
 <Dropdown title="Most Popular" options={options2} />

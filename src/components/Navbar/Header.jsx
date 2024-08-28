@@ -59,7 +59,7 @@ const Header = () => {
 
         {/* Navigation Links */}
         <nav
-          className={`lg:flex lg:items-center  lg:space-x-6 absolute lg:static inset-x-0 top-16 z-10 bg-black bg-opacity-90 lg:bg-transparent lg:opacity-100 transition-opacity duration-300 ${
+          className={`lg:flex lg:items-center cursor-pointer  lg:space-x-6 absolute lg:static inset-x-0 top-16 z-10 bg-black bg-opacity-90 lg:bg-transparent lg:opacity-100 transition-opacity duration-300 ${
             isMenuOpen
               ? "opacity-100 flex flex-col"
               : "opacity-0 pointer-events-none lg:pointer-events-auto"
